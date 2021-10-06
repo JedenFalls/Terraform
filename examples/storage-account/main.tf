@@ -8,7 +8,7 @@ terraform {
     }
   }
 
-  # backend "azurerm" {}
+  backend "azurerm" {}
 }
 
 provider "azurerm" {
@@ -22,7 +22,7 @@ provider "azurerm" {
 }
 
 module "storage-accounts" {
-  source = "github.com/JedenFalls/Terraform.git//_modules/azurerm.storage-account?ref=azstorageaccount"
+  source = "github.com/JedenFalls/Terraform.git//azurerm.storage-account?ref=azstorageaccount"
   
   rg_name                  = var.rg_name
   location                 = var.location
