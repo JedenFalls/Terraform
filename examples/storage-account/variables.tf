@@ -1,10 +1,10 @@
 variable "location" {
   default = "eastus2"
 }
-variable "tenant_id" {}
-variable "subscription_id" {}
-variable "terraform_client_id" {}
-variable "terraform_client_secret" {}
+// variable "tenant_id" {}
+// variable "subscription_id" {}
+// variable "terraform_client_id" {}
+// variable "terraform_client_secret" {}
 
 variable "rg_name" {
   default = "rg-terragrunt-poc"
