@@ -1,0 +1,8 @@
+# Terraform exclusions
+.terraform/
+*.tfstate*
+*lock*
+*_be.state.tfvars
+
+# User files
+secrets/
