@@ -22,7 +22,7 @@ provider "azurerm" {
 }
 
 module "storage-accounts" {
-  source = "../../_modules/azurerm.storage-account"
+  source = "github.com/JedenFalls/Terraform.git//_modules/azurerm.storage-account?ref=azstorageaccount"
   
   rg_name                  = var.rg_name
   location                 = var.location
