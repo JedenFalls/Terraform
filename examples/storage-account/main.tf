@@ -1,26 +1,3 @@
-terraform {
-  required_version = ">= 1.0.7"
-
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = ">= 2.78.0"
-    }
-  }
-
-  backend "azurerm" {}
-}
-
-provider "azurerm" {
-  tenant_id                  = var.tenant_id
-  subscription_id            = var.subscription_id
-  client_id                  = var.terraform_client_id
-  client_secret              = var.terraform_client_secret
-  skip_provider_registration = true
-
-  features {}
-}
-
 module "storage-accounts" {
   source = "github.com/JedenFalls/Terraform.git//azurerm.storage-account?ref=azstorageaccount"
   
