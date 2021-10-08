@@ -4,5 +4,8 @@
 *lock*
 *_be.state.tfvars
 
+# Terratest exclusion
+*go.*
+
 # User files
 secrets/
