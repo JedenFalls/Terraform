@@ -1,4 +1,3 @@
-/*
 terraform {
   required_version = ">= 1.0.7"
 
@@ -9,7 +8,7 @@ terraform {
     }
   }
 
-  backend "azurerm" {}
+  # backend "azurerm" {}
 }
 
 provider "azurerm" {
@@ -21,7 +20,6 @@ provider "azurerm" {
 
   features {}
 }
-*/
 
 module "storage-accounts" {
   source = "github.com/JedenFalls/Terraform.git//azurerm.storage-account?ref=azstorageaccount"
